@@ -1,0 +1,109 @@
+{
+    "name": "honeywell-lyric",
+    "notes": {
+        "site": "https://ecc.alarmnet.com/TrueHomeStage/",
+        "username": "mm.mats.automation@gmail.com",
+        "password": "Lyric1234Lyric1234",
+        "answer to all password recovery questions": "mutualmobile"
+    },
+    "reporting": {
+        "bugs": {
+            "android: script123": "jira number, notes..."
+        },
+        "email": {
+            "from_address": "mm.mats.automation@gmail.com",
+            "from_password": "*************",
+            "to_address_list": "whoami@mutualmobile.com"
+        }
+    },
+    "testsuites": {
+        "regression": "/Users/whoami/Documents/honeywell-lyric/",
+        "test": "/Users/whoami/Documents/honeywell-lyric/manual/testing/hierarchy/"
+    },
+    "ios": {
+        "vcs": {
+            "type": "git",
+            "url": "https://github.com/HoneywellConnectedHome/Lyric-iOS.git",
+            "username": "whoami@mutualmobile.com",
+            "branch": "camera/develop"
+        },
+        "build": {
+            "target": "Lyric",
+            "scheme": "Arena",
+            "workspace_name": "App/Arena/Arena.xcodeproj/project",
+            "configuration": "Release",
+            "app": "Lyric.app",
+            "hardware": {
+                "app_path": "build/armv7/Applications",
+                "profile": "85576D13-32B7-4C92-B9BA-7C9DC156FE76",
+                "identifier": "iOS Team Provisioning Profile: *",
+
+                "udid": "d721afab463a12f98668e2f6ac5096d630b689ee",
+                "mma-iphone-d1": "9c842f71dbb892a558cf55f735767ea80c2fd91e",
+                "red back D15": "d721afab463a12f98668e2f6ac5096d630b689ee",
+                "gold iphone 5s": "ca031e5bc4dd27cda348bb66f1622b066ac8842e",
+
+                "bundle_id": "com.mutualmobile.ATCShowroom",
+                "arch": "armv7",
+                "sdk": "iphoneos",
+                "sdk_version": "8.1"
+            },
+            "sim": {
+                "app_path": "build/i386/Applications",
+                "sdk": "iphonesimulator",
+                "sdk_version": "8.1",
+                "arch": "i386",
+                "devices": ["iPhone 5s"]
+            }
+        }
+    },
+    "android": {
+        "device_type": "Android",
+        "activity": "com.honeywell.android.arena.controller.splashscreen.SplashScreenActivity",
+        "wait_activity": "com.honeywell.android.arena.controller.splashscreen.SplashScreenActivity",
+        "package": "com.honeywell.android.lyric",
+        "___old_activity": "com.honeywell.android.lyric/.controller.splashscreen.SplashScreenActivity",
+        "___old_wait_activity": "com.honeywell.android.lyric/.controller.splashscreen.SplashScreenActivity",
+        "___old_package": "com.honeywell.android.lyric",
+
+        "vcs": {
+            "type": "git",
+            "url": "https://github.com/HoneywellConnectedHome/Lyric-Android.git",
+            "username": "whoami@mutualmobile.com",
+            "branch": "master"
+        },
+        "emulator": {
+            "devices": ["nexus_4"]
+        },
+        "build": {
+            "target": "release",
+            "app": "Arena-release-unsigned.apk",
+            "configuration": "-DbuildType=prod",
+            "build_path": "App/Arena",
+            "app_path": "App/Arena/bin",
+            "hardware": {
+                "udid": ""
+            }
+        },
+        "main_branch_build": {
+            "target": "release",
+            "app": "Arena-release-unsigned.apk",
+            "configuration": "-DbuildType=prod",
+            "build_path": "App/Arena",
+            "app_path": "App/Arena/bin",
+            "hardware": {
+                "udid": ""
+            }
+        },
+        "develop_build_(attempt)": {
+            "target": "release",
+            "app": "Arena-release-unsigned.apk",
+            "configuration": "-DbuildType=prod",
+            "build_path": "App/ArenaTest",
+            "app_path": "App/ArenaTest/bin",
+            "hardware": {
+                "udid": ""
+            }
+        }
+    }
+}
